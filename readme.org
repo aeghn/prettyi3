@@ -1,4 +1,6 @@
 * 记录
+[20190921] 添加了文泉驿正黑斜体 (oblique), 使用 Fontforge 生成。
+
 [20190921] 添加了[[https://github.com/wangzme/dotfiles/blob/master/docs/rofi_dunst.org][快捷方式：使用 Rofi 和 dunst]]
 
 [20190921] 修改文件夹结构，亮色位于 light 文件夹，暗色位于 dark 文件夹。
