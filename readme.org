@@ -15,7 +15,7 @@
 
 [20190710] 添加了 Rofi 的配置
 
-[20190707] [[https://github.com/wangzme/shareddotfiles/blob/master/docs/Material-styles.org][Material 2 风快捷方式：使用 Rofi 和 dunst  格的建议]] : 主要是主题和字体推荐
+[20190707] [[https://github.com/wangzme/shareddotfiles/blob/master/docs/Material-styles.org][Material 2 风格的建议]] : 主要是主题和字体推荐
 
 [20190706] [[https://github.com/wangzme/shareddotfiles/blob/master/docs/Archlinux-soft.org][Archlinux 日用软件推荐]] : 补全功能和一些很棒的软件推荐
 
