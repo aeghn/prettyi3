@@ -1,0 +1,139 @@
+# refences : https://gist.github.com/rmrfasterisk/9be303bfe33989fe053b5aa01a7647db
+
+include-file = ~/.config/polybar/colors.ini
+include-file = ~/.config/polybar/modules.ini
+
+
+[variables]
+mpadding = 1
+margin = 3 
+
+[bar/i3mainbar]
+background = ${colors.xbg}
+foreground = ${colors.xfg}
+
+width = 100%
+height = 30
+;offset-y = 10
+;offset-x = 20
+
+dim-value = 1.0
+
+border-top-size = 3
+border-bottom-size = 5 
+border-right-size = 0
+border-left-size = 0
+
+# bottom = true
+wm-restack = i3
+#override-redirect = true
+
+font-0 = "sf pro display:style=regular:size=12;3"
+font-1 = "sf pro plus:style=regular:size=12;3"
+font-2 = "border:size=14;2"
+
+fixed-center = true
+spacing = 0
+padding-left = 0
+padding-right = 0
+module-margin-left = 0
+module-margin-right = 0 
+
+modules-left = i3 right 
+modules-center =  left mpd date right
+modules-right = left netspeed memory battery  batstate line xbacklight pulseaudio  headphone 
+overline-size = 6
+overline-color=${colors.xbs}
+underline-size = 3
+underline-color=${colors.xbs}
+
+tray-maxsize = 22
+tray-padding = 6
+tray-position = right
+#tray-background = ${colors.xbg2}
+
+enable-ipc = true
+border-color =${colors.xbg}
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+label-urgent-foreground = #000000
+label-urgent-background = #bd2c40
+
+[bar/bspmainbar]
+background = ${colors.xbg}
+foreground = ${colors.xfg}
+
+width = 100%
+height = 25
+;offset-y = 10
+;offset-x = 20
+
+dim-value = 1.0
+
+border-top-size = 3
+border-bottom-size = 5 
+border-right-size = 0
+border-left-size = 0
+
+# bottom = true
+wm-restack = bspwm
+#override-redirect = true
+
+font-0 = "sf pro display:style=regular:size=12;3"
+font-1 = "sf pro plus:style=regular:size=12;3"
+font-2 = "border:size=18;3"
+
+fixed-center = true
+spacing = 0
+padding-left = 0
+padding-right = 0
+module-margin-left = 0
+module-margin-right = 0 
+
+modules-left = bspwm right 
+modules-center =  left mpd date right
+modules-right = left netspeed memory battery  batstate  xbacklight pulseaudio  headphone 
+overline-size = 6
+overline-color=${colors.xbs}
+underline-size = 3
+underline-color=${colors.xbs}
+
+tray-maxsize = 22
+tray-padding = 6
+tray-position = right
+tray-background = ${colors.xbg2}
+
+enable-ipc = true
+border-color =${colors.xbg}
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+label-urgent-foreground = #000000
+label-urgent-background = #bd2c40
+[settings]
+;https://github.com/jaagr/polybar/wiki/Configuration#application-settings
+throttle-output = 5
+throttle-output-for = 10
+throttle-input-for = 30
+screenchange-reload = true
+compositing-background = over
+compositing-foreground = over
+compositing-overline = over
+compositing-underline = over
+compositing-border = over
+
+; Define fallback values used by all module formats
+format-underline =
+format-overline =
+format-spacing =
+format-padding =
+format-margin =
+format-offset =
+
+[global/wm]
+margin-top =0
+margin-bottom = 1
+

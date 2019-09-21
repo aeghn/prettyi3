@@ -1,0 +1,57 @@
+#!/bin/bash
+
+#if [[ "${BLOCK_BUTTON}" -eq 1 ]]; then
+#  termite -e alsamixer
+#elif [[ "${BLOCK_BUTTON}" -eq 4 ]]; then
+#  amixer -q sset Master 2%+
+#elif [[ "${BLOCK_BUTTON}" -eq 5 ]]; then
+#  amixer -q sset Master 2%-
+#fi
+VALUE=$(amixer -c 0 contents | \
+awk -F"," '
+$1 == "numid=14" {
+    c=1
+} c && /: values/ {
+   split($0, a, "=")
+   print a[2];
+   exit
+}')
+
+if [[ "${VALUE}" == "on" ]]; then
+  echo ""
+#else 
+#  echo ""
+#  echo ""
+fi
+
+
+#from https://unix.stackexchange.com/questions/76375/how-do-i-detect-wheter-the-audio-cable-is-connected
+#One way could perhaps be to use amixer.
+
+#Jack plugged in:
+
+#$ amixer -c 0 contents
+#numid=29,iface=CARD,name='Front Headphone Jack'
+#  ; type=BOOLEAN,access=r-------,values=1
+#  : values=on
+#...
+#Jack not plugged in:
+
+#$ amixer -c 0 contents
+#numid=29,iface=CARD,name='Front Headphone Jack'
+#  ; type=BOOLEAN,access=r-------,values=1
+#  : values=off
+#...
+#So for that specific one I could do:
+
+#amixer -c 0 contents | \
+#awk -F"," '
+#$1 == "numid=own" {  此處的own的序號必須自己尋找
+#    c=1
+#} c && /: values/ {
+#   split($0, a, "=")
+#   print a[2];
+#   exit
+#}'
+#giving output of on or off.
+#

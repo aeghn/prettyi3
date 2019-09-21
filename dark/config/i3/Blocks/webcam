@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if [[ -c /dev/video0 ]]; then
+  if [[ "$(fuser /dev/video0)" != "" ]]; then
+    echo "rec"
+    echo "rec"
+    echo ""
+  else
+    echo "on"
+    echo "on"
+    echo ""
+  else
+    echo "off"
+    echo "off"
+    echo ""
+  fi
+fi

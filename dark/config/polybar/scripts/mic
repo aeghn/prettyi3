@@ -1,0 +1,22 @@
+#!/bin/bash
+
+VALUE=$(amixer -c 0 contents | awk -F"," '
+$1 == "numid=14" {
+    c=1
+} c && /: values/ {
+   split($0, a, "=")
+   print a[2];
+   exit
+}')
+
+con(){
+    device=`amixer -c 0 contents|grep "numid=14"`
+if [[ "${VALUE}" == "on" ]]; then
+    echo $device
+    return 0
+else
+    return 1
+fi
+}
+
+con

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+TIME=$(date '+%a %b %d %H:%M')
+
+echo "${TIME}"
+echo "${TIME}"
+echo ""

@@ -1,0 +1,21 @@
+#!/bin/bash
+
+TYPE="${BLOCK_INSTANCE:-caps}"
+
+lockLine=$(xset -q | grep "Num Lock")
+
+capsLock=$(echo "${lockLine}" | awk -F ' ' '{print $4}')
+numLock=$(echo "${lockLine}" | awk -F ' ' '{print $8}')
+
+if [[ "${capsLock}" == "on" && "${numLock}" == "on" ]]; then
+  echo " "
+  echo ""
+elif [[ "${capsLock}" == "on" ]]; then
+  echo ""
+  echo ""
+elif [[ "${numLock}" == "on" ]]; then
+  echo ""
+  echo ""
+else 
+  exit
+fi

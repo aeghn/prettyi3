@@ -1,0 +1,39 @@
+|        | Categories       | Apps                 | Notes                          |
+| OS     |                  | Archlinux            |                                |
+| System | WM               | i3                   |                                |
+|        | Network          | nm-applet            | NetworkManager 的托盘程序      |
+|        | Volume           | pavucontrol          |                                |
+|        |                  | pamixer              |                                |
+|        | Brightness       | xbacklight           | Polybar dependences            |
+|        |                  | light                |                                |
+|        | Input method     | Fcitx                | + Rime + Material-theme        |
+|        | Status bar       | polybar              |                                |
+|        | Wallpaper        | feh                  |                                |
+|        | Touchpad         | Libinput-gestures    |                                |
+|        | Color temp       | redshift             |                                |
+|        | Theme Settings   | lxappearance         |                                |
+|        |                  | qt5ct                | + kvantum                      |
+|        | Compositor       | compton              | Currently using tryone edition |
+| Basic  | Terminal         | termite              |                                |
+|        |                  | xfce4-terminal       |                                |
+|        | File Manager     | thunar               |                                |
+|        |                  | ranger               |                                |
+|        | Browser          | Firefox              | Tree Style Tab                 |
+|        |                  | Google-chrome-stable |                                |
+|        | editor           | Emacs                | For Org-mode                   |
+|        |                  | vim                  |                                |
+|        | Image Viewer     | Viewnior             |                                |
+|        | Video Player     | mpv                  |                                |
+|        | Music Player     | mpd                  | + ncmpcpp                      |
+|        |                  | audacious            |                                |
+| Doc    | PDF Viewer       | zathura              |                                |
+|        | Office           | Wps                  |                                |
+|        | Others           | Org-mode             |                                |
+| Others | Font             | gucharmap            |                                |
+|        | Password Manager | keepassxc            |                                |
+|        | Screenshot       | flameshot            |                                |
+|        | Color picker     | Gpick                |                                |
+|        | Comic            | MComix               |                                |
+|        | Dirctionary      | SDCV                 |                                |
+
+

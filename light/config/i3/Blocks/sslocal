@@ -1,0 +1,12 @@
+#!/bin/bash
+
+SSPID=$(pgrep -l sslocal |awk -F ' ' '{print $1}')
+
+if [[ "${SSPID}" != "" ]]; then
+  echo ""
+  echo ""
+else
+  echo ""
+  echo ""
+  echo ""
+fi

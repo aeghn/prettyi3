@@ -1,0 +1,19 @@
+* Updates
+[20190717] The icon theme is in the repo /AWEL/
+
+[20190714] [[https://github.com/wangzme/shareddotfiles/blob/master/docs/touchpad-config.org][Touchpad Settings]]
+
+[20190710] Add Rofi Settings
+
+[20190707] [[https://github.com/wangzme/shareddotfiles/blob/master/docs/Material-styles.org][Material 2 Style]] : Suggestions for themes and fonts
+
+[20190706] [[https://github.com/wangzme/shareddotfiles/blob/master/docs/Archlinux-soft-en.org][Apps recommendation]] 
+
+* Previews
+** Light(config-light)
+[[https://raw.githubusercontent.com/wangzme/shareddotfiles/master/images/light.png]]
+
+
+** Dark(config-dark)
+[[https://raw.githubusercontent.com/wangzme/shareddotfiles/master/images/dark.png]]
+

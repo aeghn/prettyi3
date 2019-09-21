@@ -1,0 +1,11 @@
+#!/bin/bash
+
+SSPID=$(pgrep -l fcitx |awk -F ' ' '{print $1}')
+
+if [[ "${SSPID}" != "" ]]; then
+  echo ""
+  echo ""
+else
+  echo ""
+  echo ""
+fi

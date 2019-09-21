@@ -1,0 +1,40 @@
+| 大类     | 小类       | 软件                 | 备注                         |
+| 系统     |            | Archlinux            |                              |
+| 系统功能 | 窗口管理器 | i3                   |                              |
+|          | 联网管理   | nm-applet            | NetworkManager 的托盘程序    |
+|          | 音量调节   | pavucontrol          |                              |
+|          |            | pamixer              | 快捷键调节                   |
+|          | 亮度调节   | xbacklight           | Polybar 模块依赖             |
+|          |            | light                | 快捷键调节                   |
+|          | 输入法     | Fcitx                | + Rime + Material-theme      |
+|          | 状态栏     | polybar              |                              |
+|          | 壁纸设置   | feh                  |                              |
+|          | 触摸板     | Libinput-gestures    |                              |
+|          | 色温调节   | redshift             |                              |
+|          | 主题管理   | lxappearance         |                              |
+|          |            | qt5ct                | + kvantum                    |
+|          | 混成器     | compton              |                              |
+| 基础软件 | 终端       | termite              |                              |
+|          |            | xfce4-terminal       | 备用，可能只是配合 Thunar    |
+|          | 文件管理器 | thunar               |                              |
+|          |            | ranger               |                              |
+|          | 浏览器     | Firefox              | 太喜欢树状标签栏             |
+|          |            | Google-chrome-stable | 备用                         |
+|          | 编辑器     | Emacs                | 因为 Org-mode 入坑           |
+|          |            | vim                  | 用来写 Emacs 配置 （peace    |
+|          | 图片浏览   | Viewnior             | 参考了 Manjaro i3 的预装软件 |
+|          | 视频播放   | mpv                  | 发热严重                     |
+|          | 压缩文件   | file-roller          | Gnome 全家桶                 |
+|          | 音乐播放   | mpd                  | + ncmpcpp                    |
+|          |            | audacious            | 备用                         |
+| 文档     | PDF 浏览   | zathura              |                              |
+|          | Office 类  | Wps                  |                              |
+|          | 其他       | Org-mode             |                              |
+| 其他     | 字体字符   | gucharmap            | 浏览字体有哪些字符           |
+|          | 密码管理   | keepassxc            |                              |
+|          | 截图       | flameshot            |                              |
+|          | 屏幕取色   | Gpick                |                              |
+|          | 漫画阅读   | MComix               |                              |
+|          | 词典       | SDCV                 | 星际词典 - 命令行版本，配合  |
+|          |            |                      | 词典和通知做取词翻译         |
+

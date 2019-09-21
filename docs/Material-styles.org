@@ -1,0 +1,15 @@
+* Material 2 Style
+- theme
+	- GTK: Materia
+	- Kvantum: Materia
+	- Icon: Papirus
+	- Cursor: Paper
+	- font
+        	- Sans-serif
+            	- Google Sans (Product Sans)
+			    - Noto Sans CJK
+		- Serif 
+                  - none
+		- Iconfont
+            	- Material icons
+

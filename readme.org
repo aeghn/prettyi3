@@ -1,0 +1,28 @@
+* 记录
+[20190921] 添加了[[https://github.com/wangzme/dotfiles/blob/master/docs/rofi_dunst.org][快捷方式：使用 Rofi 和 dunst]]
+
+[20190921] 修改文件夹结构，亮色位于 light 文件夹，暗色位于 dark 文件夹。
+
+[20190821] 添加了图标主题 AWEL (需要依赖 Arc, Qogir)
+
+[20190815] 添加了 GTK 主题 AWEL
+
+[20190717] 使用的图标在仓库 AWEL 中
+
+[20190714] [[https://github.com/wangzme/shareddotfiles/blob/master/docs/touchpad-config.org][触摸板设置及想法]]
+
+[20190710] 添加了 Rofi 的配置
+
+[20190707] [[https://github.com/wangzme/shareddotfiles/blob/master/docs/Material-styles.org][Material 2 风快捷方式：使用 Rofi 和 dunst  格的建议]] : 主要是主题和字体推荐
+
+[20190706] [[https://github.com/wangzme/shareddotfiles/blob/master/docs/Archlinux-soft.org][Archlinux 日用软件推荐]] : 补全功能和一些很棒的软件推荐
+
+* 预览
+** Light
+[[https://raw.githubusercontent.com/wangzme/shareddotfiles/master/images/light.png]]
+
+
+** Dark
+[[https://raw.githubusercontent.com/wangzme/shareddotfiles/master/images/dark.png]]
+
+

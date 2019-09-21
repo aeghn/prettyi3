@@ -1,0 +1,13 @@
+#!/bin/bash
+
+VOL=`mpc volume |cut -f2 -d":"|cut -f1 -d"%"`
+
+if [ $VOL -le 25 ];then
+    echo "<"
+elif [ $VOL -le 50 ];then 
+    echo "<<"
+elif [ $VOL -le 75 ];then 
+    echo  "<<<"
+else
+    echo "<<<<"
+fi

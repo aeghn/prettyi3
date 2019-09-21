@@ -1,0 +1,7 @@
+说明：
+- 边框是 border 字体，位于 fonts/border.otf
+
+- 字体用的是 SF Pro
+
+- 右上角的托盘图标在 AWEL 中
+

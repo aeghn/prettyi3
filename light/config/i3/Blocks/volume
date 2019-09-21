@@ -1,0 +1,52 @@
+#!/bin/bash
+
+# Left click
+if [[ "${BLOCK_BUTTON}" -eq 1 ]]; then
+  termite -e alsamixer
+#  amixer -q sset Master 10%+
+# Middle click
+elif [[ "${BLOCK_BUTTON}" -eq 2 ]]; then
+  amixer -q sset Master toggle
+# Right click
+#elif [[ "${BLOCK_BUTTON}" -eq 2 ]]; then
+#  amixer -q sset Master 10%-
+elif [[ "${BLOCK_BUTTON}" -eq 4 ]]; then
+  amixer -q sset Master 2%+
+elif [[ "${BLOCK_BUTTON}" -eq 5 ]]; then
+  amixer -q sset Master 2%-
+fi
+
+statusLine=$(amixer get Master | tail -n 1)
+status=$(echo "${statusLine}" | grep -wo "on")
+
+volume=$(echo "${statusLine}" | awk -F ' ' '{print $4}' | tr -d '[]%')
+
+VALUE=$(amixer -c 0 contents | \
+awk -F"," '
+$1 == "numid=14" {
+    c=1s
+} c && /: values/ {
+   split($0, a, "=")
+   print a[2];
+   exit
+}')
+
+
+if [[ "${status}" = "on" && "${VALUE}" = "on" ]]; then
+#    if [[ "${VALUE}" = "on" ]]; then
+      echo " ${volume}%"
+      echo " ${volume}%"
+      echo ""
+#    elif
+#      echo " ${volume}%"
+#      echo " ${volume}%"
+#      echo ""
+#    fi
+elif [[ "${status}" = "on" && "${VALUE}" = "off" ]]; then
+      echo " ${volume}%"
+      echo ""
+else
+  echo " 00%"
+  echo " 00%"
+  echo ""
+fi

@@ -1,0 +1,8 @@
+* {
+    xbs:#4169e1;
+    xfs:#e1e1e1;
+    xbg:#f2eeed50;
+    xfg:#191919;
+    transparent: #00000000;
+}
+
