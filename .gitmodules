@@ -1,0 +1,3 @@
+[submodule "clsw"]
+	path = clsw
+	url = https://github.com/aeghn/clsw
