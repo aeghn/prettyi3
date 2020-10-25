@@ -1,0 +1,104 @@
+/*
+ *
+ * Author : Aditya Shakya (adi1090x)
+ * Mail : adi1090x@gmail.com
+ * Github : @adi1090x
+ * Reddit : @adi1090x
+ * Modified by : aeghn
+ *
+ */
+
+configuration {
+  show-icons: true;
+  icon-theme: "Papirus";
+  location: 0;
+  fake-transparency: false;
+  hide-scrollbar: true;
+  bw: 0;
+  terminal: "termite";
+  sidebar-mode: false;
+}
+
+// blur version
+* {
+  bg: #e7e7e780;
+  ac: #0000001a;
+  txt: #000000;
+  tp: #00000000;
+}
+
+* {
+  background-color: rgba(0, 0, 0, 0);
+  font: "SF Pro Display 10";
+}
+
+window {
+  background-color: @bg;
+  border: 0;
+  border-radius: 4px;
+  padding: 30;
+  width: 30%;
+  height: 50%;
+  transparency: "real";
+}
+
+mainbox {
+  children: [ inputbar, listview];
+  border-radius: 12;
+  border-color: #ffffff0A;
+}
+
+listview {
+  columns: 6;
+  padding: 8;
+  spacing: 0;
+}
+
+element {
+  border: 1;
+  orientation: vertical;
+  padding: 15 15 15 15;
+  border-radius: 6;
+}
+
+element selected {
+  background-color: @ac;
+  border-color: #ffffff0A;
+  text-color: #000000;
+  transition: 20;
+}
+
+element-icon {
+  size: 60;
+  horizontal-align: 0.5;
+  vertical-align: 0.5;
+}
+
+element-icon {
+  size: 40;
+  horizontal-align: 0.5;
+  vertical-align: 0.5;
+}
+
+element-text {
+  horizontal-align: 0.5;
+  vertical-align: 0.5;
+  text-color: inherit;
+}
+
+inputbar {
+  children: [entry];
+  padding: 4 8 4 8;
+  background-color: #ffffff00;
+}
+
+prompt {
+  enabled: false;
+}
+
+entry {
+  text-color: @txt;
+  padding: 8 12 8 12;
+  font: "SF Pro Display 12";
+  margin: 0 10em;
+}

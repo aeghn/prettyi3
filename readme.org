@@ -1,30 +1,105 @@
 * 记录
-[20190921] 添加了文泉驿正黑斜体 (oblique), 使用 Fontforge 生成。
+  [2020-10-25]
+  - 簡化配置文件
+  - 增加了配置說明
 
-[20190921] 添加了[[https://github.com/wangzme/dotfiles/blob/master/docs/rofi_dunst.org][快捷方式：使用 Rofi 和 dunst]]
+  [20190921] 添加了文泉驿正黑斜体 (oblique), 使用 Fontforge 生成。
 
-[20190921] 修改文件夹结构，亮色位于 light 文件夹，暗色位于 dark 文件夹。
+  [20190921] 添加了[[https://github.com/wangzme/dotfiles/blob/master/docs/rofi_dunst.org][快捷方式：使用 Rofi 和 dunst]]
 
-[20190821] 添加了图标主题 AWEL (需要依赖 Arc, Qogir)
+  [20190921] 修改文件夹结构，亮色位于 light 文件夹，暗色位于 dark 文件夹。
 
-[20190815] 添加了 GTK 主题 AWEL
+  [20190821] 添加了图标主题 AWEL (需要依赖 Arc, Qogir)
 
-[20190717] 使用的图标在仓库 AWEL 中
+  [20190815] 添加了 GTK 主题 AWEL
 
-[20190714] [[https://github.com/wangzme/shareddotfiles/blob/master/docs/touchpad-config.org][触摸板设置及想法]]
+  [20190717] 使用的图标在仓库 AWEL 中
 
-[20190710] 添加了 Rofi 的配置
+  [20190714] [[https://github.com/wangzme/shareddotfiles/blob/master/docs/touchpad-config.org][触摸板设置及想法]]
 
-[20190707] [[https://github.com/wangzme/shareddotfiles/blob/master/docs/Material-styles.org][Material 2 风格的建议]] : 主要是主题和字体推荐
+  [20190710] 添加了 Rofi 的配置
 
-[20190706] [[https://github.com/wangzme/shareddotfiles/blob/master/docs/Archlinux-soft.org][Archlinux 日用软件推荐]] : 补全功能和一些很棒的软件推荐
+  [20190707] [[https://github.com/wangzme/shareddotfiles/blob/master/docs/Material-styles.org][Material 2 风格的建议]] : 主要是主题和字体推荐
+
+  [20190706] [[https://github.com/wangzme/shareddotfiles/blob/master/docs/Archlinux-soft.org][Archlinux 日用软件推荐]] : 补全功能和一些很棒的软件推荐
 
 * 预览
 ** Light
-[[https://raw.githubusercontent.com/wangzme/shareddotfiles/master/images/light.png]]
+   [[https://raw.githubusercontent.com/aeghn/prettyi3/2020/images/light.png]]
+
+* 配置過程
+** 一个基本的美化分为以下几部分
+   - 状态栏美化
+   - 启动器美化
+   - 特效美化
+   - 通知美化
+   - GTK/QT 程序主题
+   - 其他
+
+** 窗口管理器
+   当然是 i3wm，成熟的社区，完善的文档，规范的代码都是我选择 i3 的原因。
+   
+   另外 container 概念的使用，使一个桌面内同时存在多个布局成为了可能。
+*** 相关文件夹
+    config/i3
+
+** 状态栏美化
+   本次选用的是 polybar，一个非常成熟，社区资源非常多的状态栏程序。
+   
+   使用的主题大概还是去年做的（因为这一年都在用 i3bar）。
+*** 准备工作
+    - 请自行寻找苹果的 SF Pro 字体
+    - 安装 polybar 及相关依赖
+*** 相关文件夹
+    config/polybar
+
+** 启动器
+   当然是 rofi，扩展性 max，现在的程序启动、切换，密码管理等等都已经离不开 rofi。
+*** 准备工作
+    - 安装 papirus 图标主题
+*** 相关文件夹
+    config/rofi
+
+** 特效
+   就是混成器，窗口阴影、透明之类的都靠它，选用 picom，前身是大名鼎鼎的 compton，后来貌似因为重名太多，现维护者接手后改名为 picom，另外需要指出的是选用的不是原版 picom，而是 tryone144 的 fork 版本，主要是加入了更好的 blur 支持。
+*** 准备工作
+    安装 [[https://github.com/tryone144/picom/tree/feature/dual_kawase][picom-tryone144]] 版本
+*** 相关文件夹
+    config/picom
+
+** 通知
+   当然使用 dunst。表现中规中矩，稳定就是最好的。当然也有一些贴心的小功能。
+   
+   现在加减音量时也搭配 dunst。
+*** 相关文件夹
+    config/dunst
 
 
-** Dark
-[[https://raw.githubusercontent.com/wangzme/shareddotfiles/master/images/dark.png]]
+** QT/GTK 程序
+*** 准备工作
+    - 安装 papirus 和 Arc 图标主题
+    - 安装 qt5ct
+    - 安装 lxappearance
+*** 相关文件夹
+    themes/
+    
+    icons/
+*** 提醒
+    本仓库中提供的图标主题，目前仅仅提供了非常少量的托盘图标，其他圖標由 papirus 和 arc 提供，如果有有其他常用软件，请提交 issue 或者自己绘制。gtk 主题用的也是我去年整的主题，是 arc 主题的风味版本，几乎没有魔改，如果不喜欢请尝试自己修改 arc 主题或替换成其他主题。
 
+** 安装方法
+   配置文件请放到 ~/.config/ 下的相应文件夹内
+   
+   主题文件夹放到 ~/.local/share/themes/ 内
+   
+   图标文件放夹到 ~/.local/share/icons/ 内
+   
+   做完之前的准备工作，再将文件放到对应位置后即可安装完成。
 
+*** 其他
+    - 鎖屏
+      betterlockscreen
+    - 聲音控制
+      $mod+F1/F2/F3 靜音/減/加音量
+      $mod+F5/F6    減/加亮度
+    - 等待提 issue 补充
