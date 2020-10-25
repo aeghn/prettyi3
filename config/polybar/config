@@ -47,8 +47,6 @@ wm-restack = i3
 #override-redirect = true
 
 font-0 = "sf pro display:style=regular:size=12;3"
-font-1 = "sf pro plus:style=regular:size=12;3"
-font-2 = "border:size=14;2"
 
 fixed-center = true
 spacing = 0
