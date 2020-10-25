@@ -1,4 +1,0 @@
-! === rofi ===
-
-rofi.modi:                           ssh,window,drun,run
-rofi.theme: ~/.config/rofi/themes/default.rasi
