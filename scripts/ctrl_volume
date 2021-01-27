@@ -31,8 +31,6 @@ nocnoc_equal() {
     dunstify -i $icon -t 1500 -r 2601 -u ctrical "    $bar"
 }
 
-set -x
-
 case $1 in
     up)
         amixer set Master 5%+
