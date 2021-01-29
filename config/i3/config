@@ -50,17 +50,17 @@ client.placeholder      #000000            #909090        #FFFFFF        #268BD2
 #
 ##########################
 # Sound-section controls
-bindsym $mod+F1 exec "~/.scripts/DSvolume.sh mute"
-bindsym $mod+F3 exec "~/.scripts/DSvolume.sh up"
-bindsym $mod+F2 exec "~/.scripts/DSvolume.sh down"
+bindsym $mod+F1 exec "~/.scripts/ctrl_volume.sh mute"
+bindsym $mod+F3 exec "~/.scripts/ctrl_volume.sh up"
+bindsym $mod+F2 exec "~/.scripts/ctrl_volume.sh down"
 
 # Touchpad controls
 bindsym $mod+F9 exec "~/.scripts/DSTouTog.sh"
 
 # Screen brightness controls
-bindsym $mod+F5 exec "~/.scripts/DSbacklight.sh down"
-bindsym $mod+F6 exec "~/.scripts/DSbacklight.sh up"
-bindsym $mod+F7 exec "~/.scripts/DSbacklight.sh toggle"
+bindsym $mod+F5 exec "~/.scripts/ctrl_light.sh down"
+bindsym $mod+F6 exec "~/.scripts/ctrl_light.sh up"
+bindsym $mod+F7 exec "~/.scripts/ctrl_light.sh toggle"
 
 # Screenshot
 bindsym --release Print exec "flameshot full"
